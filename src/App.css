@@ -1,0 +1,67 @@
+#root {
+  max-width: 500em;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header{
+  background-color: #d5dafb;
+}
+
+.Title{
+  font-family: 'italic '; 
+  font-size: 20px; 
+}
+
+.celda-encabezado{
+  font-family: 'italic '; 
+  font-size: 16px; 
+}
+
+/* Tabla.css */
+
+/* Fondo para la celda actual*/
+  .table-cell.current {
+    background-color: #c8cad3;
+}  
+.table-cell {
+  padding: 10px;
+}
+
+/* Estilo de animacion de bordes para las celdas previas */
+.table-cell.prev {
+  animation: AnimacionColoresPrevias 2s infinite; 
+}
+
+/* Estilo de animacion de bordes para las celdas siguientes */
+.table-cell.next {
+  animation: AnimacionColoresSiguientes 2s infinite;
+}
+
+/* Animacion para las celdas siguientes */
+@keyframes AnimacionColoresSiguientes {
+  0% {
+    background-color: #7aea9f;
+  }
+  50% {
+    background-color: #3bdf70;
+  }
+  100% {
+    background-color: #56f18c;
+  }
+}
+
+/* Animacion para las celdas previas */
+
+@keyframes AnimacionColoresPrevias {
+  0% {
+    background-color: #f2fa0e;
+  }
+  50% {
+    background-color: #fff200;
+  }
+  100% {
+    background-color: #f7fc68;
+  }
+}
